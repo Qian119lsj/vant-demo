@@ -52,36 +52,30 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      goods: {
-        title: "美国伽力果213（约680g/3个）",
-        price: 2680,
-        express: "免运费",
-        remain: 19,
-        thumb: [
-          "https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg",
-          "https://img.yzcdn.cn/public_files/2017/10/24/1791ba14088f9c2be8c610d0a6cc0f93.jpeg",
-        ],
-      },
-    };
-  },
+<script setup lang="ts">
+import { ref } from "vue";
 
-  methods: {
-    formatPrice() {
-      return "¥" + (this.goods.price / 100).toFixed(2);
-    },
+const goods = ref({
+  title: "美国伽力果213（约680g/3个）",
+  price: 2680,
+  express: "免运费",
+  remain: 19,
+  thumb: [
+    "https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg",
+    "https://img.yzcdn.cn/public_files/2017/10/24/1791ba14088f9c2be8c610d0a6cc0f93.jpeg",
+  ],
+});
 
-    onClickCart() {
-      this.$router.push("cart");
-    },
+const formatPrice = (price: number) => {
+  return "¥" + (price / 100).toFixed(2);
+};
 
-    sorry() {
-      showToast("暂无后续逻辑~");
-    },
-  },
+const onClickCart = () => {
+  // replace this with your actual router logic
+};
+
+const sorry = () => {
+  showToast("暂无后续逻辑~");
 };
 </script>
 

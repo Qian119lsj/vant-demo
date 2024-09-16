@@ -12,10 +12,10 @@ The current repository is the official example repository for Vant, which includ
 git clone git@github.com:vant-ui/vant-demo.git
 ```
 
-2. Then, choose the example you need, such as the Vite project example:
+2. Then, choose the example you need, such as the [Rsbuild](https://github.com/web-infra-dev/rsbuild) project example:
 
 ```bash
-cd vant/vite
+cd vant/rsbuild
 ```
 
 3. Install the dependencies using `npm` or other package managers, and start the project:
@@ -31,10 +31,10 @@ npm run dev
 
 ```bash
 ├── vant                # Examples related to Vant
+│   ├── rsbuild         Building applications using Vue 3, Vant 4, and Rsbuild
 │   ├── vite            Building applications using Vue 3, Vant 4, and Vite
 │   ├── nuxt3           Building applications using Nuxt 3 and Vant 4
-│   ├── vue3            Building applications using Vue 3, Vant 4, and Vue Cli
-│   ├── vue3-ts         Building applications using Vue 3, Vant 4, TypeScript, Vite, and Pnpm
+│   ├── vue3-ts         Building applications using Vue 3, Vant 4, TypeScript, Vite
 │   ├── cdn             Importing Vant through CDN
 │   ├── rem             Configuring rem adaptation
 │   ├── viewport        Configuring viewport settings
@@ -44,7 +44,7 @@ npm run dev
 │   └── base            Building mini-programs using Vant Weapp
 │
 ├── react-vant          # Examples related to React Vant
-│   └── modern-js       Building applications using React Vant, Modern.js, and Rspack
+│   └── rsbuild         Building applications using React Vant and Rsbuild
 │
 └── vant-cli            # Examples related to Vant Cli
     └── base            Building component libraries using Vant Cli
